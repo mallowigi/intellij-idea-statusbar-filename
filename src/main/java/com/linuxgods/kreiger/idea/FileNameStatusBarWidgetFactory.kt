@@ -1,27 +1,33 @@
-package com.linuxgods.kreiger.idea;
+package com.linuxgods.kreiger.idea
 
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.util.Disposer;
-import com.intellij.openapi.wm.StatusBarWidget;
-import com.intellij.openapi.wm.impl.status.widget.StatusBarEditorBasedWidgetFactory;
-import org.jetbrains.annotations.Nls;
-import org.jetbrains.annotations.NonNls;
-import org.jetbrains.annotations.NotNull;
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.util.Disposer
+import com.intellij.openapi.wm.StatusBarWidget
+import com.intellij.openapi.wm.impl.status.widget.StatusBarEditorBasedWidgetFactory
+import org.jetbrains.annotations.Nls
+import org.jetbrains.annotations.NonNls
 
-public class FileNameStatusBarWidgetFactory extends StatusBarEditorBasedWidgetFactory {
-    @Override public @NonNls @NotNull String getId() {
-        return "FileName";
-    }
+/** File name status bar widget factory. */
+class FileNameStatusBarWidgetFactory : StatusBarEditorBasedWidgetFactory() {
+  /** Get id. */
+  override fun getId(): @NonNls String = "FileName"
 
-    @Override public @Nls @NotNull String getDisplayName() {
-        return "File Name";
-    }
+  /** Get display name. */
+  override fun getDisplayName(): @Nls String = "File Name"
 
-    @Override public @NotNull StatusBarWidget createWidget(@NotNull Project project) {
-        return new FileNameStatusBarWidget(project);
-    }
+  /**
+   * Create widget
+   *
+   * @param project
+   */
+  override fun createWidget(project: Project): StatusBarWidget = FileNameStatusBarWidget(project)
 
-    @Override public void disposeWidget(@NotNull StatusBarWidget widget) {
-        Disposer.dispose(widget);
-    }
+  /**
+   * Dispose widget
+   *
+   * @param widget
+   */
+  override fun disposeWidget(widget: StatusBarWidget) {
+    Disposer.dispose(widget)
+  }
 }
