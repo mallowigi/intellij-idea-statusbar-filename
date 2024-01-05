@@ -1,7 +1,8 @@
 repo_name: mallowigi/intellij-idea-statusbar-filename
 report_id: a6547c841b9436bdebdbabbdfec2f535
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-19T07:58:56+00:00'
+timestamp: '2024-01-05T08:37:11+00:00'
 requested_by: mallowigi
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/mallowigi/intellij-idea-statusbar-filename
   detection_source: Repo Metadata
 - name: Kotlin
   description: Statically typed Programming Language targeting JVM and JavaScript
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
+  detection_source_url: https://github.com/mallowigi/intellij-idea-statusbar-filename
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -34,6 +37,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/mallowigi/intellij-idea-statusbar-filename
   detection_source: Repo Metadata
 - name: Gradle
   description: A powerful build system for the JVM
@@ -44,6 +48,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Java Build Tools
   image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
-  detection_source: gradlew.bat
+  detection_source_url: https://github.com/mallowigi/intellij-idea-statusbar-filename/blob/main/gradlew
+  detection_source: gradlew
   last_updated_by: Elior
   last_updated_on: 2022-07-21 09:19:42.000000000 Z
